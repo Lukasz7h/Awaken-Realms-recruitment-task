@@ -21,7 +21,6 @@ export function catchError(_error)
     const seconds = date.getSeconds().toString().padStart(2, 0);
 
     objFromJson[`${year}-${month}-${day} ${hours}:${minutes}:${seconds}`] = error;
-    console.log(objFromJson)
 
     writeFile("./errors.json", JSON.stringify(objFromJson, null, 2), (writeErr) => {
         if (writeErr) {
