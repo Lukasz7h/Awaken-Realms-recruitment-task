@@ -2,5 +2,9 @@
   "2024-05-04 23:05:46": {
     "message": "listen EADDRINUSE: address already in use :::3000",
     "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1751:16)\n    at listenInCluster (node:net:1799:12)\n    at Server.listen (node:net:1887:7)\n    at Function.listen (C:\\Users\\luuuk\\Desktop\\ModelLLM\\Awaken-Realms-recruitment-task\\node_modules\\express\\lib\\application.js:635:24)\n    at file:///C:/Users/luuuk/Desktop/ModelLLM/Awaken-Realms-recruitment-task/index.js:19:5\n    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+  },
+  "2024-05-05 00:12:35": {
+    "message": "Cannot set headers after they are sent to the client",
+    "stack": "Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:405:5)\n    at ServerResponse.setHeader (node:_http_outgoing:648:11)\n    at ServerResponse.writeHead (node:_http_server:381:21)\n    at getSummarizeOfArticle (file:///C:/Users/luuuk/Desktop/ModelLLM/Awaken-Realms-recruitment-task/openAI_API.js:62:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/luuuk/Desktop/ModelLLM/Awaken-Realms-recruitment-task/route.js:81:26"
   }
 }

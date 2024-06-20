@@ -15,8 +15,8 @@ export async function getSummarizeOfArticle({url, summaryLength, LLModel}, res) 
 
         // article could not be fetch
         if(fetchArticle.error) {
-            res.writeHead(fetchArticle.code, fetchArticle.data);
-            return res.end();
+            res.writeHead(fetchArticle.code);
+            return res.end( JSON.stringify({error: fetchArticle.data}) );
         };
 
         // user has sent wrong kind of LLM model
