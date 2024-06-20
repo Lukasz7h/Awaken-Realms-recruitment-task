@@ -1,5 +1,6 @@
 import { readFileSync, writeFile } from "fs";
 
+// add new error log into erors.json file
 export function catchError(_error)
 {
     const error = {

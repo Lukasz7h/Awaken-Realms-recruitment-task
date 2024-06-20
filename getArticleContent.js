@@ -4,7 +4,7 @@ import { load } from 'cheerio';
 export async function fetchArticleContent(url) {
     try {
         let text = await extract(url); // feature get article from dedicated url
-        text = load(text.content).root().text(); // Get rid html code from our text
+        text = load(text.content).root().text(); // get rid html code from our text
 
         text = text.replace(/\n+/g, '. ');
         return {text};
