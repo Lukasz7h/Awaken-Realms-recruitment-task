@@ -19,11 +19,16 @@ export async function getSummarizeOfArticle({url, summaryLength, LLModel}, res) 
             return res.end();
         };
 
+        console.log(LLModel)
+
         // user send wrong kind of LLM model
-        if(LLModel && !apiURL.indexOf(`${LLModel}`)) {
-            res.writeHead(400, {error: "Does not exist model with that name."});
-            return res.end();
+        if(LLModel && apiURL.indexOf(`${LLModel}`) < 0) {
+            console.log(LLModel)
+            res.writeHead(400);
+            return res.end(JSON.stringify({error: "Does not exist model with that name."}));
         }
+
+        
 
         const passThrough = new PassThrough();
 

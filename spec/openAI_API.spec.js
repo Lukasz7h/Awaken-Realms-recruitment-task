@@ -46,11 +46,21 @@ describe('getSummarizeOfArticle', () => {
         const mockResponse = new PassThrough();
 
         const header = {};
-        mockResponse.writeHead = (code, data) => {header.code = code, header.data = data};
+        mockResponse.writeHead = (code, data) => {header.code = code};
+
+        function waitForData(callback) {
+            mockResponse.on('data', callback);
+        }
             
+        const onDataReceived = data => {
+            data = JSON.parse(data.toString());
+
+            expect(header.code).toEqual(400);
+            expect(data).toEqual({ error: 'Does not exist model with that name.' });
+        };
+            
+        waitForData(onDataReceived);
         await getSummarizeOfArticle(mockParams, mockResponse);
 
-        expect(header.code).toEqual(400);
-        expect(header.data).toEqual({error: "Does not exist model with that name."});
     });
 });

@@ -46,7 +46,7 @@ const router = express.Router();
 *                              A user can then distribute his public key, and anyone wishing to send the user a message would encrypt their message using the public public key.'
  *       400:
  *         description: Url parameter is require. | Min size of summaryLength is 50 and max is 250. | Does not exist model with that name.
- *       404,
+ *       404:
  *         description: Article could not be found.
  *       500:
  *         description: Internal Server Error
