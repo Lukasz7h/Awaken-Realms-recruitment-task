@@ -1,0 +1,23 @@
+{
+  "name": "openllm",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Task composed for Awaken Realms company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@extractus/article-extractor": "^8.0.10",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jasmine": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.8"
+  }
+}
