@@ -18,4 +18,8 @@ This API was created in a Node.js environment (version 18), based on the Express
 3. Run Jasmine unit tests:
    npm test
 
+## Documentation
+
+API documentation is nested here: https://openllm-udbqyadcka-ey.a.run.app/api-docs/. Contains details about endpoints, parameters and how utilize from API.
+
 The API is available at the following link: https://openllm-udbqyadcka-ey.a.run.app/
