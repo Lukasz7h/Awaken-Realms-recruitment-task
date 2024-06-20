@@ -12,5 +12,7 @@ This API was created in a Node.js environment (version 18), based on the Express
 2. Run the app:
    node index.js
    
-3. Lunch JASMIN unit test:
+3. Run Jasmine unit tests:
    npm test
+
+API is available below link: https://openllm-udbqyadcka-ey.a.run.app/
