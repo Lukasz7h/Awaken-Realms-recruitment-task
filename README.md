@@ -3,7 +3,7 @@
 This API was created in a Node.js environment (version 18), based on the Express framework. It collaborates with the following libraries: Helmet, Swagger, @extractus/article-extractor, Cheerio, Zod, and Axios.
 
 1. Clone the repository:
-   git clone https://github.com/Lukasz7h/Awaken-Realms-recruitment-task
+   git clone https://github.com/Lukasz7h/Awaken-Realms-recruitment-task /n
    cd Awaken-Realms-recruitment-task
 
 2. Install dependencies:
