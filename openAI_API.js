@@ -40,7 +40,7 @@ export async function getSummarizeOfArticle({url, summaryLength, LLModel}, res) 
         // fetch and return summary of text
         const response = await axiosInstance.post(host + useModel, data, {
             headers: {
-                'Authorization': 'Bearer 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',
+                'Authorization': 'Bearer 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', // Key from free API "hugging face"
                 'Content-Type': 'application/json'
             },
             responseType: 'stream'
